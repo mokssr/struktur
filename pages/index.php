@@ -19,6 +19,13 @@
     <![endif]-->
   </head>
   <body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/struktur/"><span class="glyphicon glyphicon-log-out"></span> Keluar</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="container">
         <div class=header>
         </div>
@@ -27,7 +34,7 @@
             <h1>Data Diri</h1>
             <div class="col-md-3 col-md-offset-1">
                 <img src="../public/img/profile.jpg" alt="profile" style="width:100%; height:auto; margin-bottom:10px;">
-                <button class="btn btn-primary btn-block">Update biodata</button>
+                <button class="btn btn-primary btn-block" type="button" data-toggle="modal" data-target="#updatebio">Update biodata</button>
             </div>
             <div class="col-md-7">
             <ul class="list-group">
@@ -42,6 +49,64 @@
             </ul>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="updatebio" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Update Data Diri</h4>
+                </div>
+                <div class="modal-body">
+                    <div  class="input-group">
+                        <form action="#" method="POST">
+                            <!-- nama jabatan kabupaten/kota kecamatan desa alamat tlp -->
+                            <input type="text" name="nama" class="form-control" placeholder="Nama lengkap"/>
+                            <input type="text" name="jabatan" class="form-control" placeholder="Jabatan"/>
+                            <input type="text" name="alamat" class="form-control" placeholder="Alamat"/>
+                            <select class="form-control" name="kabupaten">
+                                <option value="" disabled selected>Kabupaten/Kota</option>
+                                <option>Denpasar</option>
+                                <option>Badung</option>
+                                <option>Tabanan</option>
+                                <option>Klungkung</option>
+                                <option>Bangli</option>
+                                <option>Gianyar</option>
+                                <option>Jembrana</option>
+                                <option>Buleleng</option>
+                            </select>
+                            <select class="form-control" name="kecamatan">
+                                <option value="" disabled selected>Kecamatan</option>
+                                <option>Denpasar Utara</option>
+                                <option>Denpasar Timur</option>
+                                <option>Denpasar Barat</option>
+                                <option>Denpasar Selatan</option>
+                            </select>
+                            <select class="form-control" name="desa">
+                                <option value="" disabled selected>Desa</option>
+                                <option>Desa Utara</option>
+                                <option>Desa Timur</option>
+                                <option>Desa Barat</option>
+                                <option>Desa Selatan</option>
+                            </select>
+                            <input type="tel" name="telp" class="form-control" placeholder="Telepon"/>
+                            <input type="text" name="username" class="form-control" placeholder="Username"/>
+                            <input type="password" name="pass" class="form-control" placeholder="Password"/>
+                            <div class="submit-control">
+                            <button class="btn btn-default register" type="submit" value="submit"> Update </button>
+                            <button class="btn btn-default register" data-dismiss="modal">Batal</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+
 
         <div class="row">
             <h2>Data Bawahan</h2>
