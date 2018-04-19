@@ -62,7 +62,7 @@
                 <input type="password" name="pass" class="form-control" placeholder="Password"/>
                 <div class="submit-control">
                   <button class="btn btn-default register" type="submit" value="submit"> Register </button>
-                  <a class="btn btn-default register" href="/struktur"> Batal </a>
+                  <a class="btn btn-default register" href="/struktur/"> Batal </a>
                 </div>
               </form>
             </div>

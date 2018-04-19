@@ -46,8 +46,8 @@
         <div class="row">
             <h2>Data Bawahan</h2>
             <h3>Jumlah : <strong>2</strong></h3>
-
-            <table class="table">
+            <button class="btn btn-success">Tambahkan Staff</button>
+            <table class="table table-striped">
                 <thead>
                 <tr>
                     <th>Firstname</th>
